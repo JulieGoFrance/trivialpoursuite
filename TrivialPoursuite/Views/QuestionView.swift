@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct QuestionView: View {
-    @StateObject var trivialData = TrivialData()
+    @EnvironmentObject var trivialData : TrivialData
     @State var notSelected = true
     
     var fontValueStandard =  CGFloat(12)
