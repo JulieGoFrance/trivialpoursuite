@@ -35,11 +35,7 @@ struct QuestionView: View {
                     answer in AnswerRow(answer: answer).environmentObject(TrivialData()).font(.system(size: fontValueStandard))
                 }
       
-//                if trivialData.answerSelected{
-//                    Text("selected trivial")
-//                }else {
-//                    Text("not selected trivia")
-//                }
+
                 Text(trivialData.testing)
                 Button {
                     trivialData.goToNextQuestion()
@@ -63,27 +59,4 @@ struct QuestionView_Previews: PreviewProvider {
         QuestionView().environmentObject(TrivialData())
     }
 }
-
-
-//if notSelected {
-//    Text("not selected")
-//}else {
-//    Text("select")
-//}
-
-
-//                AnswerRow(answer: Answer(text: "No", isCorrect: false)).environmentObject(TriviaManager())
-//                AnswerRow(answer: Answer(text: "Yes", isCorrect: true)).environmentObject(TriviaManager())
-//  PrimaryButton(text: "next")
-//Text("test trivia data is selected. " + String(notSelected))
-//                if (trivialData.answerSelected){
-//                   $isSelected = true
-//                }
-//                else {
-//                    $isSelected = false
-//                }
-//
-
-
-
 
